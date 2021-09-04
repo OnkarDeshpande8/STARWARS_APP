@@ -1,0 +1,11 @@
+.FilmCast{
+    border: 5px solid black;
+    text-align: center;
+
+}
+.CastName{
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
