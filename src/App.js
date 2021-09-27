@@ -11,7 +11,8 @@ import { createContext } from "react";
 import { useState } from "react";
 
 export const ThemeContext = createContext();
-export const ApiLinkContext = createContext("http://localhost:3000/films/");
+export const ApiLinkContext = createContext("https://my-json-server.typicode.com/OnkarDeshpande8/FakeJsonAPI/films");
+// export const ApiLinkContext = createContext("http://localhost:3000/films/");
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
