@@ -1,6 +1,7 @@
-import { Button } from "@material-ui/core";
-import { useEffect, useState } from "react";
-import axios from "axios";
+// import { Button } from "@material-ui/core";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+import { useState } from "react";
 import XLSX from "xlsx";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -40,7 +41,6 @@ const ReadFilms = () => {
     };
     reader.readAsBinaryString(f);
   };
-  console.log();
 
   return (
     <div>

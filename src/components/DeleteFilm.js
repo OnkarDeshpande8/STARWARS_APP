@@ -1,11 +1,16 @@
 import axios from "axios";
+import { useContext } from "react";
+import {ApiLinkContext} from "../App"
+
 
 const DeleteFilm = (props) => {
 
   console.log(props.id)
 
   const filmID = (props.id.id !== null && props.id.id)
-  const ApiLink ="http://localhost:3000/films/";
+
+  const ApiLink =useContext(ApiLinkContext)
+  // const ApiLink ="http://localhost:3000/films/";
   // const ApiLink ="https://crudcrud.com/api/1e6c538576ff42efa4e80420f03d0f59/films/";
   const crudLink = ApiLink+filmID
   

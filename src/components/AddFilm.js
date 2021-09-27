@@ -1,5 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
+import { useContext } from "react";
+import {ApiLinkContext} from "../App"
+
 
 const AddFilm = (props) => {
   const [FilmData, setFilmData] = useState({
@@ -12,7 +15,8 @@ const AddFilm = (props) => {
     posterLink:""
   });
 
-  const ApiLink ="http://localhost:3000/films/";
+  const ApiLink =useContext(ApiLinkContext);
+  // const ApiLink ="http://localhost:3000/films/";
   // const ApiLink ="https://crudcrud.com/api/1e6c538576ff42efa4e80420f03d0f59/films/";
   
   const addFilm = async () => {
