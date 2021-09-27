@@ -15,7 +15,8 @@ function FilmCastSub(props) {
   let styele1 = {
     border: "5px solid black",
     padding: "10px",
-    margin: "50px",
+    // margin: "50px",
+    margin: "20px",
     hight: "200px",
     width: "300px",
   };
